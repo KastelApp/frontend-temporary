@@ -99,8 +99,8 @@ function HomePage({csrfToken}) {
                         </Text>
                     </Heading>
                     <Text color={'gray.500'}>
-                        We are Open Sourced so the Community can help and learn. We also Encrypt all User Data so that
-                        no one is able to view your data and that is for all data.
+                        We are open sourced, so the community can help and learn. We also encrypt all user data so that
+                        no one is able to view it, which applies to all types of data.
                     </Text>
                     <Stack
                         direction={'column'}
