@@ -1,9 +1,8 @@
-import {Box, Button, Container, Heading, Stack, Text, useColorMode, useToast,} from '@chakra-ui/react';
+import {Box, Button, Container, Heading, Stack, Text, useColorMode,} from '@chakra-ui/react';
 import {MoonIcon, SunIcon} from "@chakra-ui/icons";
 
 export default function HomePage() {
     const {colorMode, toggleColorMode} = useColorMode();
-    const toast = useToast();
 
     return (
         <>
