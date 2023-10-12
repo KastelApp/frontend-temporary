@@ -6,7 +6,6 @@ export default function HomePage() {
 
     return (
         <>
-
             <Button
                 onClick={() => toggleColorMode()}
                 pos="absolute"
