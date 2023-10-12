@@ -1,6 +1,6 @@
 {
-  "name": "kastelll-frontend",
-  "version": "0.0.1",
+  "name": "kastel-temp",
+  "version": "0.1.1",
   "description": "",
   "scripts": {
     "dev": "next dev",
