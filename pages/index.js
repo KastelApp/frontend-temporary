@@ -1,5 +1,7 @@
-import {Box, Button, Container, Heading, Stack, Text, useColorMode,} from '@chakra-ui/react';
+import {Box, Button, Container, Heading, HStack, Stack, Text, useColorMode,} from '@chakra-ui/react';
 import {MoonIcon, SunIcon} from "@chakra-ui/icons";
+import {FaDiscord, FaGithub} from 'react-icons/fa';
+import NextLink from "next/link";
 
 export default function HomePage() {
     const {colorMode, toggleColorMode} = useColorMode();
@@ -39,6 +41,24 @@ export default function HomePage() {
                         We are open sourced, so the community can help and learn. We also encrypt all user data so that
                         no one is able to view it, which applies to all types of data.
                     </Text>
+
+                    <HStack
+                        spacing={3}
+                        align={'center'}
+                        alignSelf={'center'}
+                        position={'relative'}>
+                        <NextLink href={'/github'} target={"_blank"}>
+                            <Button leftIcon={<FaGithub/>}>
+                                Github
+                            </Button>
+                        </NextLink>
+                        <NextLink href={'/discord'} target={"_blank"}>
+                            <Button leftIcon={<FaDiscord/>}>
+                                Discord
+                            </Button>
+                        </NextLink>
+                    </HStack>
+
                 </Stack>
             </Container>
         </>
